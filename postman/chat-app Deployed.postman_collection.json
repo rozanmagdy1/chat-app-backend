@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "5b6abe48-f6c4-4de6-be47-63001b5fc983",
+		"name": "chat-app Deployed",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23282249"
+	},
+	"item": [
+		{
+			"name": "get-profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhbmFtb2hhbWVkNTBAZ2FtaWwuY29tIiwiaWQiOiI2NDkzMjBlODZiZjhjOGMzNWE5N2ExMWMiLCJpYXQiOjE2ODczODA2NTd9.dtOWDxNGv0hZMYcBcPNrhKQ_XMf7XN4zd_5hlQPtO08",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "chat-app-backend-nu.vercel.app/profile",
+					"host": [
+						"chat-app-backend-nu",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-user-by-id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvemFubWFnZHkxQGdtYWlsLmNvbSIsImlkIjoiNjQ0ODNiODYwYTJmMDdkZDc2NDk1NzE4IiwiaWF0IjoxNjgyNDc0MzA5fQ.AQiJIEZli5S1h2i_liR9Htx6uQ2wEN_vv3sPunqpPVo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/user/64483b860a2f07dd76495718",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"64483b860a2f07dd76495718"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ranamohamed50@gamil.com\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "chat-app-backend-nu.vercel.app/login",
+					"host": [
+						"chat-app-backend-nu",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"rana\",\r\n    \"username\": \"ranamohamed50@gamil.com\",\r\n    \"password\": \"12345\",\r\n    \"age\": 26\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "chat-app-backend-nu.vercel.app/signup",
+					"host": [
+						"chat-app-backend-nu",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "make-conversation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvemFubWFnZHkxQGdtYWlsLmNvbSIsImlkIjoiNjQ0ODNiODYwYTJmMDdkZDc2NDk1NzE4IiwiaWF0IjoxNjgyNDc0MzA5fQ.AQiJIEZli5S1h2i_liR9Htx6uQ2wEN_vv3sPunqpPVo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"senderId\": \"64483b860a2f07dd76495718\",\r\n    \"receiverId\": \"644855ad0a2f07dd76495722\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "chat-app-backend-nu.vercel.app/conversation",
+					"host": [
+						"chat-app-backend-nu",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"conversation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-user-conversation",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvemFubWFnZHkxQGdtYWlsLmNvbSIsImlkIjoiNjQ0ODNiODYwYTJmMDdkZDc2NDk1NzE4IiwiaWF0IjoxNjgyNDc0MzA5fQ.AQiJIEZli5S1h2i_liR9Htx6uQ2wEN_vv3sPunqpPVo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "chat-app-backend-nu.vercel.app/conversation/64483b860a2f07dd76495718",
+					"host": [
+						"chat-app-backend-nu",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"conversation",
+						"64483b860a2f07dd76495718"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-conversation-of-two-friends",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvemFubWFnZHkxQGdtYWlsLmNvbSIsImlkIjoiNjQ0ODNiODYwYTJmMDdkZDc2NDk1NzE4IiwiaWF0IjoxNjgyNDc0MzA5fQ.AQiJIEZli5S1h2i_liR9Htx6uQ2wEN_vv3sPunqpPVo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "chat-app-backend-nu.vercel.app/conversation/find/64483b860a2f07dd76495718/6448825f6e0a718e9601b239",
+					"host": [
+						"chat-app-backend-nu",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"conversation",
+						"find",
+						"64483b860a2f07dd76495718",
+						"6448825f6e0a718e9601b239"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvemFubWFnZHkxQGdtYWlsLmNvbSIsImlkIjoiNjQ0ODNiODYwYTJmMDdkZDc2NDk1NzE4IiwiaWF0IjoxNjgyNDc0MzA5fQ.AQiJIEZli5S1h2i_liR9Htx6uQ2wEN_vv3sPunqpPVo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversationId\": \"645aa355edf00c1b87e3affa\",\r\n    \"sender\": \"64483b860a2f07dd76495718\",\r\n    \"text\": \"hello rana\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "chat-app-backend-nu.vercel.app/message",
+					"host": [
+						"chat-app-backend-nu",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-messages-in-conversation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvemFubWFnZHkxQGdtYWlsLmNvbSIsImlkIjoiNjQ0ODNiODYwYTJmMDdkZDc2NDk1NzE4IiwiaWF0IjoxNjgyNDc0MzA5fQ.AQiJIEZli5S1h2i_liR9Htx6uQ2wEN_vv3sPunqpPVo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "chat-app-backend-nu.vercel.app/message/64487d442181a5f812ed9f33",
+					"host": [
+						"chat-app-backend-nu",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"message",
+						"64487d442181a5f812ed9f33"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvemFubWFnZHkxQGdtYWlsLmNvbSIsImlkIjoiNjQ0ODNiODYwYTJmMDdkZDc2NDk1NzE4IiwiaWF0IjoxNjgyNDc0MzA5fQ.AQiJIEZli5S1h2i_liR9Htx6uQ2wEN_vv3sPunqpPVo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "chat-app-backend-nu.vercel.app/users",
+					"host": [
+						"chat-app-backend-nu",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
