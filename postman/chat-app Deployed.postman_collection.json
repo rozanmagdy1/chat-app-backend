@@ -18,7 +18,8 @@
 					}
 				],
 				"url": {
-					"raw": "chat-app-backend-nu.vercel.app/profile",
+					"raw": "https://chat-app-backend-nu.vercel.app/profile",
+					"protocol": "https",
 					"host": [
 						"chat-app-backend-nu",
 						"vercel",
@@ -43,12 +44,13 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/user/64483b860a2f07dd76495718",
-					"protocol": "http",
+					"raw": "https://chat-app-backend-nu.vercel.app/user/64483b860a2f07dd76495718",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"chat-app-backend-nu",
+						"vercel",
+						"app"
 					],
-					"port": "8000",
 					"path": [
 						"user",
 						"64483b860a2f07dd76495718"
@@ -72,7 +74,8 @@
 					}
 				},
 				"url": {
-					"raw": "chat-app-backend-nu.vercel.app/login",
+					"raw": "https://chat-app-backend-nu.vercel.app/login",
+					"protocol": "https",
 					"host": [
 						"chat-app-backend-nu",
 						"vercel",
@@ -100,7 +103,8 @@
 					}
 				},
 				"url": {
-					"raw": "chat-app-backend-nu.vercel.app/signup",
+					"raw": "https://chat-app-backend-nu.vercel.app/signup",
+					"protocol": "https",
 					"host": [
 						"chat-app-backend-nu",
 						"vercel",
@@ -134,7 +138,8 @@
 					}
 				},
 				"url": {
-					"raw": "chat-app-backend-nu.vercel.app/conversation",
+					"raw": "https://chat-app-backend-nu.vercel.app/conversation",
+					"protocol": "https",
 					"host": [
 						"chat-app-backend-nu",
 						"vercel",
@@ -159,7 +164,8 @@
 					}
 				],
 				"url": {
-					"raw": "chat-app-backend-nu.vercel.app/conversation/64483b860a2f07dd76495718",
+					"raw": "https://chat-app-backend-nu.vercel.app/conversation/64483b860a2f07dd76495718",
+					"protocol": "https",
 					"host": [
 						"chat-app-backend-nu",
 						"vercel",
@@ -185,7 +191,8 @@
 					}
 				],
 				"url": {
-					"raw": "chat-app-backend-nu.vercel.app/conversation/find/64483b860a2f07dd76495718/6448825f6e0a718e9601b239",
+					"raw": "https://chat-app-backend-nu.vercel.app/conversation/find/64483b860a2f07dd76495718/6448825f6e0a718e9601b239",
+					"protocol": "https",
 					"host": [
 						"chat-app-backend-nu",
 						"vercel",
@@ -222,7 +229,8 @@
 					}
 				},
 				"url": {
-					"raw": "chat-app-backend-nu.vercel.app/message",
+					"raw": "https://chat-app-backend-nu.vercel.app/message",
+					"protocol": "https",
 					"host": [
 						"chat-app-backend-nu",
 						"vercel",
@@ -254,7 +262,8 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "chat-app-backend-nu.vercel.app/message/64487d442181a5f812ed9f33",
+					"raw": "https://chat-app-backend-nu.vercel.app/message/64487d442181a5f812ed9f33",
+					"protocol": "https",
 					"host": [
 						"chat-app-backend-nu",
 						"vercel",
@@ -280,7 +289,8 @@
 					}
 				],
 				"url": {
-					"raw": "chat-app-backend-nu.vercel.app/users",
+					"raw": "https://chat-app-backend-nu.vercel.app/users",
+					"protocol": "https",
 					"host": [
 						"chat-app-backend-nu",
 						"vercel",
