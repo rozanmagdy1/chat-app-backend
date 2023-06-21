@@ -1,0 +1,1 @@
+To run the project you need to create .env file contain :- the link of your database and save it "URI_DB"
