@@ -8,7 +8,6 @@ const { Middleware } = require("./Middlewares/middleware");
 const { routes } = require("./Routes/routes");
 
 const app = express();
-
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
