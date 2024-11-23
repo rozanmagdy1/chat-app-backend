@@ -13,6 +13,6 @@
         }
     ],
     "env": {
-        "MONGO_URI": "mongodb+srv://fareskhalel:Fares123456789@cluster0.fm5zods.mongodb.net/chatApp?retryWrites=true&w=majority"
+        "MONGO_URI": "mongodb+srv://rozanmagdy4:KbCKjJxTRQfBpsgq@grand-labs.wwo1kni.mongodb.net/chatApp"
     }
 }
